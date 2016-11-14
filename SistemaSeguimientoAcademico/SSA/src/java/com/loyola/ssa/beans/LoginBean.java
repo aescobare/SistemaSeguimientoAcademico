@@ -24,8 +24,6 @@ public class LoginBean {
     private String usuario;
     private String password;
 
-    
-    
     public String getUsuario() {
         return usuario;
     }
