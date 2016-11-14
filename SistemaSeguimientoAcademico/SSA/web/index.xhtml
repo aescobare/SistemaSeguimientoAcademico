@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title><ui:insert name="Sistema Hotel PSS"/></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</h:head>
+<h:body >
+    <h:form>
+        <p:growl id="msgs" />
+
+        <div style="width: 800px; margin: 100px auto auto auto;" >
+
+            <table align="center" border="0" cellpadding="3" cellspacing="3" width="18%">
+                <tr>
+                    <td colspan="2">
+                        <div id="logo">
+                            <!--<img src="images/Logo.png" alt="#" height="130" width="220"/>-->
+                            <p style="text-align: center;">TEST</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="titulos2">
+                        <p:outputLabel for="txtLogin" value="Usuario: " />
+                    </td>
+                    <td style="width: 125px">
+                        <p:inputText id="txtLogin" value="#{loginBean.usuario}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p:outputLabel for="txtPassword" value="Password: "/>
+                    </td>
+                    <td>
+                        <p:password id="txtPassword" value="#{loginBean.password}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 27px">
+                        <div style="text-align: center;">
+                            <p:commandButton id="btnIngresar" actionListener="#{loginBean.iniciarSesion()}" value="ingresar" tabindex="0"
+                                             ajax="false"/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </h:form>
+</h:body>
+</html>

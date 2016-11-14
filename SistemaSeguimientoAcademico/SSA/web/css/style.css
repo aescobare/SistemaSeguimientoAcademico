@@ -1,0 +1,416 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-10-2016, 05:54:52 PM
+    Author     : aescobar
+*/
+
+
+/* default styles
+-------------- */
+
+body { 
+    padding: 0em;
+    margin: 0em;
+    font: 0.8em Tahoma, sans-serif;
+    line-height: 1.5em;
+    background: #eee url("../images/back2.jpg");
+    color: #2e91e9;
+
+}
+
+#logo{
+    padding: 10px;
+    float: left;
+}
+
+#empresa{
+    float: right;
+    width: 200;
+    padding: 10px;
+}
+
+#logoEmpresa{
+
+}
+
+#cabezera{
+    height: 100px;
+}
+
+#tituloSistema{
+    font-size: 20px;
+    color: #333;
+    text-align: right;
+    font-weight: bold;
+}
+
+a {	
+    color: #e69700;
+    background: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover { 
+    /* color: #6C757A;*/
+    color: #e69700;
+    background: inherit;    
+}
+
+
+h1 { 
+    color: #e69700;
+    font: normal 1.5em Arial, Sans-Serif;
+    letter-spacing: -1px; 
+    margin: 0.25em auto;
+    text-align: left;
+    padding: 7px 0 0 8px; 
+
+}
+
+h2 { 
+    color: #e69700;
+    font: normal 2.3em Arial, Sans-Serif; 
+    letter-spacing: -1px; 
+    margin: 0.20em auto;
+    text-align: center;
+    padding: 6px 0 0 7px; 
+
+}
+
+.dark  { color: #737373; 
+         background: inherit; 
+         font-weight: bold; 
+}
+
+h1 a, h2 a { 
+    text-decoration: none; 
+}
+
+h1 a:hover, h2 a:hover { color: #2E2D50;
+                         background: inherit;
+}
+
+/*h2 { 
+
+    margin: 0; 
+    padding: 0; 
+    font: bold 1.7em Arial, Sans-Serif; 
+    letter-spacing: -1px; 
+}
+
+h2 { 
+    font-size: 1.5em;
+    margin-bottom: 5px; color: #000; 
+    background: inherit; 
+}*/
+
+p {	
+    margin: 0 0 5px 0; 
+}
+
+ul { margin: 0; 
+     padding : 0; 
+     list-style : none; 
+}
+
+form { 	
+    margin:0; 
+}
+
+
+input.login { 
+    width: 150px;
+    border: none;
+
+    padding: 4px;
+}
+
+/* layout
+------ */
+
+.content { 
+    margin: 0px auto;
+    width: 1042px; 
+    padding: 0px;
+}
+
+.header { 
+    height: 60px;
+    background: #29497b;
+    color: #6392C6;
+    margin: 0px 0px;
+    /*padding: 0px 0 0 0;*/
+    padding: 0.8em;
+
+}
+
+.logo {
+    float:left;
+    position:absolute;
+    margin: 0px 9px 0px 9px;
+}
+
+.top_info {
+    float: right;
+    width: 700px;
+    padding: 5px 15px 4px 0;
+    color: #808080;
+    text-align:right;
+}
+
+.top_info_left {
+    width: 200px;
+    float: left;
+    padding: 0px 15px 0px 15px;
+}
+
+.top_info_right {
+    float: right;
+    width: 400px;
+    margin: 0px 30px 0px 30px;
+}
+
+.top_info_right a {
+    color: #FFF;
+    text-decoration:none;
+}
+.top_info_right a:hover {
+    color: #2E2D50;
+}
+
+.browse_category  {
+    font-size: 0.8em;
+    width: 220px;
+    color: white;
+    margin-top:1px;
+    /* height: 19px; */
+}
+
+.bar { 
+    clear: both;
+    font-size: 1.1em;
+    height: 31px;
+    color: #f0f0f0;
+    margin: 0 0 0 0px;
+    background: white;
+    padding: 0px 15px;
+}
+
+.bar li { 
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+    /* background: #000000; */
+    color:#000;
+    float: left;
+    font-size: 8pt;
+    height: 20px;
+}
+
+.bar li.active { 
+    background: #294747;
+    background-position: 1px 5px;
+    color: #000;
+    font-weight: bold;
+    padding: 6px 15px 5px 15px;
+}
+
+.bar li a { 
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 15px;
+} 
+
+.bar li a:hover { 
+    color: #f0f0f0;
+    background: #294747;
+} 
+
+.search_field { 
+    background: #f0f0f0;
+    color: #808080;
+    clear: both;
+    font-weight: bold;
+    padding: 7px 20px 7px 20px;
+    margin: 15px 0;
+    height: 25px;
+    width: 500px;
+    float: right;
+}
+
+.grey {
+    color: #808080;
+    background: inherit;
+    font-weight: normal;
+}
+
+.search_form { float: right; }
+
+.subheader {
+    margin: 0px 0 10px 0;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 5px 0;
+    background: #A4A4A4;
+    color: #fff;
+}
+
+/*#menu-vertical
+{
+    width: 150px;
+    background: #039;
+}
+#menu-vertical ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-vertical ul li a, #menu-vertical ul li a:link, #menu-vertical ul li a:visited, #menu-vertical ul li a:active{
+    padding: 4px 10px;
+    background: #03C;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    text-decoration: none;
+
+}
+
+#menu-vertical ul li a:hover{
+    background: #02C;
+    color: #ff1;
+}*/
+
+/* left side
+--------- */
+
+.left {
+    float: left;
+    width: 65%;
+    margin: 0 0 10px 0;
+}
+
+.left h3 {
+    clear: both;
+    background: #000000;
+    color: #deda00;
+    padding: 7px 0px 7px 15px;
+    font: bold 1em Tahoma, Arial, Sans-Serif;
+    margin: 0 0 0px 0;
+    height: 15px;
+}
+.left_side {
+    float: left;
+    width: 180px;
+    padding: 0 0 0 10px;
+    margin: 10px 0;
+}
+
+.left_side a, .right_side a { color: #414141; background: #FFF; }
+
+
+.left_box { margin: 0 0 10px 0; color: #000; background: #FFF; padding: 3px 0; }
+
+
+/* right side
+---------- */
+
+.right {
+    float: right;
+    width: 34.6%;
+    margin: 0 0 10px 0;
+}
+
+.right p {
+    padding-right: 10px;
+    padding-left: 16px;
+
+}
+
+.right h3 {
+    background: #c6db46 ;
+    color: #000;
+    padding: 7px 0 7px 15px;
+    font: bold 1em Tahoma, Arial, Sans-Serif;
+    margin: 0 0 3px 0;
+    height: 15px;
+}
+
+.right_articles {
+    background: #f5f5f5;
+    color: #414141;
+    padding: 8px;
+    margin: 0 0 3px 0;
+}
+
+.image {
+    float: left;
+    margin: 0 9px 3px 0;
+}
+
+/* footer
+------ */
+
+.footer { 
+    clear: both;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    line-height: 1.8em;
+}
+
+.footer a { color: #808080; background: #fff; }
+
+
+/*añadimos otro para el datatable*/  
+.orders {
+
+    border: thin solid black;
+
+}
+
+
+.evenColumn {
+
+    height: 25px;
+    text-align: center;
+    background:  #f0f0f0;
+    color:black;
+
+}
+
+.oddColumn {
+
+    text-align: center;
+    background: #fff;
+    color:#000;
+
+}
+/* personalizado*/
+
+
+.inputSelection{color:#19219f; font-weight:bold;font-family:monospace;}
+.alerta{color:red;font-weight:bold;font-family:sans-serif}
+
+/*para el data table*/
+.orders {
+    border: thin solid white;
+}
+.ordersHeader {
+    text-align: center;
+    font-style: normal;
+    font-family: Arial;
+
+    background:  #deda00;
+    font-weight:bold;
+    color: black;
+    border-bottom: 1px solid #171f9f;
+}
+
+
+.error{
+    color:red;
+}
