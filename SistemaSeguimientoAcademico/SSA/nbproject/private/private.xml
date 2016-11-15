@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ALVARO/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/beans/notas.java</file>
+            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/entities/Estudiante.java</file>
+            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/impDAO/AdministradorDAOimp.java</file>
+            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/entities/Administrador.java</file>
+            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/DAO/AdministradorDAO.java</file>
+            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/beans/LoginBean.java</file>
         </group>
     </open-files>
 </project-private>
