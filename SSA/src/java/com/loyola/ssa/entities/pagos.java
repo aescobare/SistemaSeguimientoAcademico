@@ -5,7 +5,7 @@ import java.util.Date;
  
 public class pagos {
     private String   id_pago;
-    private String   cod_estudiante;
+    private String   id_estudiante;
     private String   id_carrera;
     private Date   fecha_pago;
     private String   tipo_pago;
@@ -16,8 +16,8 @@ public class pagos {
         this.id_pago = id_pago;
     }
 
-    public void setCod_estudiante(String cod_estudiante) {
-        this.cod_estudiante = cod_estudiante;
+    public void setCod_estudiante(String id_estudiante) {
+        this.id_estudiante = id_estudiante;
     }
 
     public void setId_carrera(String id_carrera) {
@@ -45,7 +45,7 @@ public class pagos {
     }
 
     public String getCod_estudiante() {
-        return cod_estudiante;
+        return id_estudiante;
     }
 
     public String getId_carrera() {
