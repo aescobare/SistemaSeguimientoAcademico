@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/entities/Estudiante.java</file>
-            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/impDAO/AdministradorDAOimp.java</file>
-            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/entities/Administrador.java</file>
-            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/DAO/AdministradorDAO.java</file>
-            <file>file:/C:/Users/UserPC/Documents/NetBeansProjects/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/beans/LoginBean.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/impDAO/AdministradorDAOimp.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/entities/Administrador.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/ConexionDB/DBconexion.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/patrones/composite/DeveloperHoja.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/patrones/composite/Cliente.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/patrones/composite/Empleado.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/patrones/composite/ManagerComposite.java</file>
+            <file>file:/C:/Users/FERNANDO/Documents/SistemaSeguimientoAcademico/SistemaSeguimientoAcademico/SSA/src/java/com/loyola/ssa/DAO/AdministradorDAO.java</file>
         </group>
     </open-files>
 </project-private>
