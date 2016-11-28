@@ -1,7 +1,7 @@
 
 package com.loyola.ssa.impDAO;
 
-import com.loyola.ssa.DAO.AdministradorDAO;
+import com.loyola.ssa.dao.AdministradorDAO;
 import com.loyola.ssa.entities.Administrador;
 import java.util.ArrayList;
 import java.util.Date;

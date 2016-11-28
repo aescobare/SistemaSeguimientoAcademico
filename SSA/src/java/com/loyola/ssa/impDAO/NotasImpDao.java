@@ -1,7 +1,8 @@
 
 package com.loyola.ssa.impDAO;
 
-import com.loyola.ssa.DAO.notasDAO;
+
+import com.loyola.ssa.dao.notasDAO;
 import com.loyola.ssa.entities.notas;
 import java.util.ArrayList;
 

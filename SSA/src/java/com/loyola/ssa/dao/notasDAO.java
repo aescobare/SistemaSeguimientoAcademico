@@ -1,4 +1,4 @@
-package com.loyola.ssa.DAO;
+package com.loyola.ssa.dao;
 
 import java.util.ArrayList;
 import com.loyola.ssa.entities.notas;

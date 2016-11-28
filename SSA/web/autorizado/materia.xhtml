@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" >
+<ui:composition template="/WEB-INF/facelets/templates/principal.xhtml">
+    <ui:define name="title">
+        <h:outputText value="Inicio"/>
+    </ui:define>
+    <ui:define name="content">
+        <h1><h:outputText id="lblTitulo" value="MATERIAS"/></h1>
+        <h:form id="fPrincipal">
+            <p:panelGrid id="pnlDatosMateria" columns="4">
+                <p:outputLabel value="Cod. Materia:"/>
+                <p:inputText value="#{materiaBean.materiaActual.codMateria}"/>
+                <p:outputLabel value="Nombre:"/>
+                <p:inputText value="#{materiaBean.materiaActual.nombre}"/>
+                <p:outputLabel value="Descripcion"/>
+                <p:inputText value="#{materiaBean.materiaActual.descripcion}"/>
+                <p:commandButton actionListener="#{materiaBean.insertarMateria()}" value="Agregar"
+                                 ajax='false'/>
+            </p:panelGrid> 
+            
+            <p:dataTable id="dtMaterias" value="#{materiaBean.materias}" var="materia">
+                <p:column headerText="Id">
+                    <p:outputLabel value="#{materia.materiaId}"/>
+                </p:column>
+                <p:column headerText="Nombre">
+                    <p:outputLabel value="#{materia.nombre}"/>
+                </p:column>
+                
+            </p:dataTable>
+        </h:form>
+
+    </ui:define>
+</ui:composition>
+</html>

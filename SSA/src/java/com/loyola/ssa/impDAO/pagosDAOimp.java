@@ -1,6 +1,6 @@
 
 package com.loyola.ssa.impDAO;
-import com.loyola.ssa.DAO.pagosDAO;
+import com.loyola.ssa.dao.pagosDAO;
 import com.loyola.ssa.entities.pagos;
 import java.util.ArrayList;
 import java.util.Date;
