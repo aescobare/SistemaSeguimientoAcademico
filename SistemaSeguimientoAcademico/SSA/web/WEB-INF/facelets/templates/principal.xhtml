@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title><ui:insert name="Universidad Loyola"/></title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/CronosLoso.png"/>
+
+</h:head>
+<h:body>
+
+    <div id="layout" style="width: auto; margin: auto; padding: 10px;">
+        <div id="header" style="width: auto;">
+            <div id="cabezera">
+                <div id="logo">
+                    <!--<img src="../images/logo.png" alt="#" height="70" width="100"/>-->
+                </div>
+                <div id="empresa">
+                    <div id="tituloSistema">
+                        
+                    </div>
+                    <p style="text-align: center;"></p>
+
+                </div>
+            </div>
+            <ui:include src="menu.xhtml"/>
+        </div>
+
+        <div id="content" style="width: auto; margin: auto;">
+            <ui:insert name="content">
+                <span></span>
+            </ui:insert>
+        </div>
+
+        <div id="footer" style="width: auto; text-align: center;">
+            <p:separator id="separator"/>
+            <p>Ariel Escobar Endara <a href="escobareariel@gmail.com"> escobareariel@gmail.com</a>  - 2016
+            </p>
+        </div>
+    </div>
+
+</h:body>
+</html>
