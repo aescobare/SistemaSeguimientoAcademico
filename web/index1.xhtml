@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title><ui:insert name="Sistema Hotel PSS"/></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</h:head>
+
+     <!--   <p:growl id="msj" showsDetail="true"/>-->
+        
+    <h:form id="frm">
+         <p:outputLabel for="txtid_estudiante" value="id_estudiante" /> 
+         <p:inputText id="txtid_estudiante" value="#{EstudianteBean.estudiante.id_estudiante}"/>
+         
+         <p:outputLabel for="txtcod_estudiante" value="cod_estudiante" /> 
+         <p:inputText id="txtcod_estudiante" value="#{EstudianteBean.estudiante.cod_estudiante}"/>
+         
+         <p:outputLabel for="txtid_usuario" value="id_usuario" /> 
+         <p:inputText id="txtid_usuario" value="#{EstudianteBean.estudiante.id_usuario}"/>
+         
+         <p:outputLabel for="txttipo_estudiante" value="tipo_estudiante" /> 
+         <p:inputText id="txttipo_usuario" value="#{EstudianteBean.estudiante.tipo_estudiante}"/>
+         
+         
+         <p:commandButton value="Registrar" actionListener="#{EstudianteBean.registrar()}"/>
+         <p:commandButton value="Listar" actionListener="#{EstudianteBean.listar()}" update="data"/>
+         
+         
+         <p:dataTable id="data" value="#{EstudianteBean.lstEstudiante}" var="estudiante">
+             <p:column headerText="id_estudiante">
+                 <p:outputLabel value="#{estudiante.id_estudiante}"/>
+             </p:column>
+             <p:column headerText="cod_estudiante">
+                 <p:outputLabel value="#{estudiante.cod_estudiante}"/>
+             </p:column>
+             <p:column headerText="id_usuario">
+                 <p:outputLabel value="#{estudiante.id_usuario}"/>
+             </p:column>
+             <p:column headerText="tipo_estudiante">
+                 <p:outputLabel value="#{estudiante.tipo_estudiante}"/>
+             </p:column>
+             
+             
+             <p:column headerText="modificar">
+                 <p:commandLink value="modificar" actionListener="#{EstudianteBean.leerID(estudiante)}" oncomplete="PF('wdlgdatos').show();"update=":dlgdatos" />
+                                 
+             </p:column>
+             <p:column headerText="eliminar">
+                 <p:commandLink value="eliminar" actionListener="#{EstudianteBean.eliminarID(estudiante)}" update=":dlgdatos" />
+                                 
+             </p:column>
+             
+         </p:dataTable>
+        
+    </h:form>
+        
+        <p:dialog header="datos" widgetVar="wdlgdatos" id="dlgdatos"> 
+            <h:form> 
+                <p:outputLabel  value="id_estudiante" /> 
+                <p:inputText  value="#{EstudianteBean.estudiante.id_estudiante}"/>
+         
+                <p:outputLabel  value="cod_estudiante" /> 
+                <p:inputText  value="#{EstudianteBean.estudiante.cod_estudiante}"/>
+         
+                <p:outputLabel  value="id_usuario" /> 
+                <p:inputText  value="#{EstudianteBean.estudiante.id_usuario}"/>
+         
+                <p:outputLabel  value="tipo_estudiante" /> 
+                <p:inputText  value="#{EstudianteBean.estudiante.tipo_estudiante}"/>
+         
+         
+                <p:commandButton value="Modificar" actionListener="#{EstudianteBean.modificar()}" oncomplete="PF('wdlgdatos').hide();"update=":frm:data" />
+                <p:commandButton value="Cancelar"  oncomplete="PF('wdlgdatos').hide();"/>
+            </h:form>
+        </p:dialog>
+    
+
+</html>
