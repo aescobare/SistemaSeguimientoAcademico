@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition>
+
+    <h:form id="formPrincipal">
+ 
+        <p:menubar id="menu">
+            <p:menuitem value="Opcion1" url="/adm/op1.jsf" icon="ui-icon-wrench" />
+            <p:menuitem value="Opcion2" url="/adm/op2.jsf" icon="ui-icon-person" />
+            <p:menuitem value="Opcion3" url="/adm/op3.jsf" icon="ui-icon-suitcase" />
+            <p:menuitem value="Opcion4" url="/adm/op4.jsf" icon="ui-icon-clock" />
+            
+
+
+            <f:facet name="options">
+                <b><p:outputLabel style="margin-right:10px; margin-top: 20px; " value="Usuario: "/></b>
+
+                <p:commandLink style="margin-right:10px" value="#{loginBean.usuario} #{loginBean.usuario}"/>
+            </f:facet>
+
+            <p:menuitem value="Salir" icon="ui-icon-close" />
+        </p:menubar>
+    </h:form>
+</ui:composition>
+</html>
