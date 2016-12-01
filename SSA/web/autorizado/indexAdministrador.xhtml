@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+   
+    <ui:composition template="/WEB-INF/facelets/templates/principal.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Inicio"/>
+        </ui:define>
+        <ui:define name="content">
+            
+            <h1> <h:outputText id="lblTitulo" value ="Adminis"/></h1>
+             
+            <h:form id="fPrincipal" >
+                <p:panelGrid id="pnlDatosAdmin" columns="6">
+                    
+                    <p:outputLabel value="Ci:   "/>
+                    <p:inputText value=
+                          "#{administradorControl.administradorUp.ci_A}"
+                           placeholder="escriba su ci"/>
+                    <p:outputLabel value="Nombre:   "/>
+                    <p:inputText value="#{administradorControl.administradorUp.nombre_A}"
+                          placeholder="escriba su nombre"/>
+                    
+                    <p:outputLabel value="Apellidos:   "/>
+                    <p:inputText value="#{administradorControl.administradorUp.apellidos_A}"
+                           placeholder="escriba su apellido"/>
+                 <p:outputLabel value="Cargo:   "/>
+                    <p:inputText value="#{administradorControl.administradorUp.cargo_A}"
+                           placeholder="escriba su cargo"/>
+                
+                
+                <p:commandButton value="Registrar"  update="admin" 
+                                 actionListener="#{administradorControl.insertarAdministrador()}"
+                                 ajax='false'/>
+            </p:panelGrid>
+                
+        <p:dataTable id="dats" value="#{administradorControl.administradores}" var="administrador">
+            <p:column headerText="Id">
+                <p:outputLabel value ="#{administrador.id_Admin}"/>
+            </p:column>
+            <p:column headerText="IdUsuario">
+                <p:outputLabel value ="#{administrador.id_Usuario}"/>
+            </p:column>
+            <p:column headerText="Nombre">
+                <p:outputLabel value ="#{administrador.nombre_A}"/>
+            </p:column>
+            <p:column headerText="Apellidos">
+                <p:outputLabel value ="#{administrador.apellidos_A}"/>
+            </p:column>
+            <p:column headerText="cargo">
+                <p:outputLabel value ="#{administrador.cargo_A}"/>
+            </p:column>
+        </p:dataTable>
+        </h:form>
+        
+            </ui:define>  
+    </ui:composition>
+</html>
